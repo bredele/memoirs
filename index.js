@@ -1,6 +1,6 @@
 
 
-module.exports = (arr) => {
+module.exports = (arr, property) => {
   return arr.map(parse).sort((before, after) => {
     return before - after
   })
