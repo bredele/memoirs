@@ -1,0 +1,31 @@
+{
+  "name": "memoirs",
+  "version": "1.0.0",
+  "description": "Chronoligically sort dates or objects",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/memoirs.git"
+  },
+  "keywords": [
+    "date",
+    "time",
+    "history",
+    "sort"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/memoirs/issues"
+  },
+  "homepage": "https://github.com/bredele/memoirs#readme",
+  "devDependencies": {
+    "tape": "^4.9.0"
+  }
+}
