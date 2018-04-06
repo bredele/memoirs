@@ -1,8 +1,19 @@
 
 
 module.exports = (arr, property) => {
-  return arr.map(parse).sort((before, after) => {
-    return before - after
+  return arr.map(time => {
+    if (property) {
+      return {
+        ...time,
+        [property] : parse(time[property])
+      }
+    } else return parse(time)
+  }).sort((before, after) => {
+    if (property) {
+      return before[property] - after[property]
+    } else {
+      return before - after
+    }
   })
 }
 

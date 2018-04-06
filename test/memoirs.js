@@ -42,7 +42,11 @@ test('should sort object containing dates with a given property name', assert =>
   const sorted = history([
     {expiry: new Date('01-01-2100')},
     {expiry: new Date('01-01-2000')},
-    {expiry: new Date('01-01-2300')},
+    {expiry: new Date('01-01-2300')}
   ], 'expiry')
-  assert.deepEqual(sorted, [946710000000, 4102470000000, 10413817200000])
+  assert.deepEqual(sorted, [
+    {expiry: 946710000000},
+    {expiry: 4102470000000},
+    {expiry: 10413817200000}
+  ])
 })
