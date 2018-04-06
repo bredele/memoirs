@@ -1,5 +1,31 @@
 
 
+/**
+ * Sort array of dates chrnologically.
+ *
+ * This module also allows to sort objects chronologically
+ * with a given property name.
+ *
+ * Exammples:
+ *
+ *  memoirs([
+ *    new Date('01-01-2100'),
+ *    new Date('01-01-2000'),
+ *    new Date('01-01-2300')
+ *  ])
+ *
+ *  memoirs([
+ *   {expiry: new Date('01-01-2100')},
+ *   {expiry: new Date('01-01-2000')},
+ *   {expiry: new Date('01-01-2300'})
+ *  ], 'expiry')
+ *
+ * @param {Array} arr
+ * @param {String?} property
+ * @return {Array}
+ * @api public
+ */
+
 module.exports = (arr, property) => {
   return arr.map(time => {
     if (property) {
