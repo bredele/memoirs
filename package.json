@@ -19,6 +19,9 @@
     "history",
     "sort"
   ],
+  "engines" : {
+    "node" : ">8.0.0"
+  },
   "author": "Olivier Wietrich",
   "license": "MIT",
   "bugs": {
