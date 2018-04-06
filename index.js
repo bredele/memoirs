@@ -1,3 +1,8 @@
+/**
+ * Dependencie
+ */
+
+const parse = require('date-resolve')
 
 
 /**
@@ -41,17 +46,4 @@ module.exports = (arr, property) => {
       return before - after
     }
   })
-}
-
-
-/**
- * Parse given time into a date in ms.
- *
- * @param {Date|Number|String} time
- * @return {Number}
- * @api private
- */
-
-function parse (time) {
-  return typeof time === 'number' ? time : Date.parse(time)
 }
