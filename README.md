@@ -1,4 +1,4 @@
-# Runout
+# Memoirs
 
   [![Build Status](https://travis-ci.org/bredele/memoirs.svg?branch=master)](https://travis-ci.org/bredele/memoirs)
   [![NPM](https://img.shields.io/npm/v/memoirs.svg)](https://www.npmjs.com/package/memoirs)
